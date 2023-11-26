@@ -43,7 +43,7 @@ async function preguntar(message) {
       messages: [
         {
           role: "system",
-          content: "Dado un mensaje emocional y directo, reformula el mensaje en un lenguaje profesional y cortés, adecuado para un entorno corporativo o una comunicación formal de negocios. Mantén la esencia del contenido, pero asegúrate de que la expresión sea respetuosa y medida.",
+          content: "Dado un mensaje emocional y directo, reformula el mensaje en un lenguaje profesional y cortés. Mantén la esencia del contenido, pero asegúrate de que la expresión sea respetuosa y medida.",
         },
         { role: "user", content: message },
       ],
