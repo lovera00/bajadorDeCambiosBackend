@@ -43,12 +43,13 @@ async function preguntar(message) {
       messages: [
         {
           role: "system",
-          content: "Dado un mensaje con un tono muy directo y emocional, reescribe el mensaje en un lenguaje formal y respetuoso, manteniendo el contenido esencial pero moderando la expresión emocional.",
+          content: "Dado un mensaje emocional y directo, reformula el mensaje en un lenguaje profesional y cortés, adecuado para un entorno corporativo o una comunicación formal de negocios. Mantén la esencia del contenido, pero asegúrate de que la expresión sea respetuosa y medida.",
         },
         { role: "user", content: message },
       ],
       model: "gpt-3.5-turbo",
       max_tokens: 3000,
+      temperature: 1.5
     });
     console.log(chatCompletion.choices[0].message.content);
     return chatCompletion.choices[0].message.content;
