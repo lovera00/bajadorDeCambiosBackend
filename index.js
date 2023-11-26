@@ -43,7 +43,7 @@ async function preguntar(message) {
       messages: [
         {
           role: "system",
-          content: "Deberas transformar los insultos del usuario, a comentarios formales, haciendo que los insultos se conviertan en formalidades, recuerda utilizar los mismos tiempos de conjugacion que el usuario",
+          content: "Dado un mensaje con un tono muy directo y emocional, reescribe el mensaje en un lenguaje formal y respetuoso, manteniendo el contenido esencial pero moderando la expresión emocional.",
         },
         { role: "user", content: message },
       ],
