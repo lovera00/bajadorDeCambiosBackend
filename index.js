@@ -16,7 +16,7 @@ const corsOptions = {
     optionsSuccessStatus: 200,
     };
 app.use(cors(corsOptions));
-const port = 3000;
+const port = process.env.PORT;
 
 app.use(express.json()); // Para manejar JSON en las solicitudes
 
