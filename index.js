@@ -49,7 +49,7 @@ async function preguntar(message) {
       ],
       model: "gpt-3.5-turbo",
       max_tokens: 3000,
-      temperature: 1.5
+      temperature: 0.2
     });
     console.log(chatCompletion.choices[0].message.content);
     return chatCompletion.choices[0].message.content;
